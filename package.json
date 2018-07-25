@@ -1,0 +1,17 @@
+{
+  "name": "mailer-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "^4.6.5"
+  },
+  "devDependencies": {
+    "ejs": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jovy",
+  "license": "ISC"
+}
