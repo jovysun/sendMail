@@ -14,24 +14,12 @@ const ejsData = template({
   desc: '使用Ejs渲染模板',
 });
 
-
-
-// pass是授权码，不是登录密码
-// 163邮箱的话，要开启POP3/SMTP服务，在设置 --> POP3/SMTP/IMAP页面，设置。开通后会有个授权码的，配置里的密码，就是用这个授权码
-// qq邮箱的话，同样也要开启这个服务，设置 --> 账户 --> POP3服务，点击开启，就会有个授权码，如果忘了记录，在开启服务下面有个“生成授权码”的，可以获取到的。
-
 const config = {
 	host: 'smtp.qq.com',
 	service: 'QQ',
-	user: '416700436@qq.com',
-	pass: 'rcirtxrkmeodbhaf',
+	user: 'xxx@qq.com',
+	pass: 'xxxxxxxx',
 };
-// const config = {
-// 	service: '163',
-// 	user: 'jovy_sun@163.com',
-// 	pass: 'jovysun163',
-// };
-
 
 	// create reusable transporter object using the default SMTP transport
 	let transporter = nodemailer.createTransport({
@@ -48,7 +36,7 @@ const config = {
 	// setup email data with unicode symbols
 	let mailOptions = {
 		from: '"sun" <'+ config.user+'>', // sender address
-		to: '"sun" <416700436@qq.com>, sunzhaowei@made-in-china.com', // list of receivers
+		to: '"sun" <xxx@qq.com>, xxx@xxx.com', // list of receivers
 		subject: 'nodemailer测试demo', // Subject line
 		// text: 'Hello', // plain text body
 		// html: ejsData, // 内容来自ejs模板
